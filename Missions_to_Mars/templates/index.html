@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Mission To Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data.</a></p>
+    </div>
+
+    <!-- Mars Information -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2><u>Latest Mars News</u></h2>
+      </div>
+    </div>
+    </br>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>{{mars_results.news_title}}</h4>
+        <p>{{mars_results.news_p}}</p>
+      </div>
+    </div>
+    <hr>
+  
+    <div class="row">
+      <div class="col-md-8 border">
+        <h2 class=""><u>Featured Mars Image</u></h2> 
+        </br>
+        <img src="{{mars_results.featured_image_url}}" height=700px width=700px alt="Features Mars Image">
+      </div>
+      <div class="col-md-4 border">
+          <h2 class=""><u>Mars Facts</u></h2>
+          </br>
+          {{ mars_results.fact_table | safe }}
+        
+      </div>
+    </div>
+    <hr>
+      <div class="row text-center">
+        <h1>Mars Hemispheres</h1>
+      </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <img src = {{mars_results.img_url1 | safe}} height=500px width=500px>
+        <h3>Valles Marineris Hemisphere Enhanced</h3>
+      </div>
+      <div class="col-md-6">
+        <img src = {{mars_results.img_url2}} height=500px width=500px>
+        <h3>Cerberus Hemisphere Enhanced</h3>
+      </div>
+      
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src = {{mars_results.img_url3}} height=500px width=500px>
+        <h3>Schiaperelli Hemisphere Enhanced</h3>
+        
+      </div>
+      <div class="col-md-6">
+        <img src = {{mars_results.img_url4}} height=500px width=500px>
+        <h3>Syrtis Major Hemisphere Enhanced</h3>
+        
+      </div>
+    </div>
+
+</body>
+
+</html>
+
