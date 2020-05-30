@@ -16,7 +16,7 @@ def init_browser():
 
 def scrape():
     browser = init_browser()
-    
+    time.sleep(3)
     # define url
     #Get the URL for NASA Mars News
     url = 'https://mars.nasa.gov/news/'
