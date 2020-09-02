@@ -12,7 +12,7 @@ https://mars.nasa.gov/news/ website was used to get the latest news on Mars miss
 https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars was used to scrape the featured image of mars in full resolution.
 
 ### Mars Facts
-https://space-facts.com/mars/ was used to obtain the table containing facts about the planet including Diameter, Mass, etc.
+https://space-facts.com/mars/ was used to obtain the table containing facts about the planet including diameter, mass, etc.
 
 ### Mars Hemispheres
 https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars was used to obtain high resolution images for each of Mars hemispheres.
@@ -27,7 +27,7 @@ A new database and a new collection was created.
 
 All of the scraped data was stored in the above created database.
 
-Root route / that will query the database and pass the mars data into HTML template was created.
+Root route / that  queries the database and passes the Mars data into HTML template was created.
 
 ## HTML file
 Finally a HTML file called 'index.html' was created that displayed all of the data in HTML elements.
