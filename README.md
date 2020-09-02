@@ -32,3 +32,5 @@ Root route / that will query the database and pass the mars data into HTML templ
 ## HTML file
 Finally a HTML file called 'index.html' was created that displayed all of the data in HTML elements.
 
+![mars1](mars1.png)
+![mars2](mars2.png)
