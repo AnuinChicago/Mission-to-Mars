@@ -12,13 +12,13 @@ https://mars.nasa.gov/news/ website was used to get the latest news on Mars miss
 https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars was used to scrape the featured image of mars in full resolution.
 
 ### Mars Facts
-https://space-facts.com/mars/ to obtain the table containing facts about the planet including Diameter, Mass, etc.
+https://space-facts.com/mars/ was used to obtain the table containing facts about the planet including Diameter, Mass, etc.
 
 ### Mars Hemispheres
-https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars to obtain high resolution images for each of Mar's hemispheres.
+https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars was used to obtain high resolution images for each of Mars hemispheres.
 
 ## Flask
-A python script to run all of the scraping code was designed and all of the scraped data was put into one Python dictionary.
+A Python script was designed to run all of the scraping code and all of the scraped data was put into one Python dictionary.
 
 '/scrape' route which will import the Python script and call the scrape function was created.
 
